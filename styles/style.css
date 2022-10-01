@@ -58,9 +58,9 @@ a:hover {
 #container::before {
     position: absolute;
     z-index: -1;
-    top: 7%;
-    width: 77.5%;
-    height: 35%;
+    top: 50px;
+    width: 900px;
+    height: 350px;
     content: "";
     background-color: #F5F5F5;
     border-radius: 0 0 30px 30px;
