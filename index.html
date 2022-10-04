@@ -6,14 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulo Lopes</title>
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
     <link rel="stylesheet" href="styles/style.css">
+
 </head>
 
 <body>
     <!-- menu section -->
     <header>
-        <nav>
-            <ul>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <nav class="top-nav">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
                 <li><a id="selected" href="index.html">home</a>
                 <li><a href="portfolio.html">portfolio</a>
                 <li><a href="blog.html">blog</a>
@@ -32,7 +39,7 @@
         <div class="header">
             <div id="intro-container">
                 <p>hi!<br>i'm paulo lopes,<br>front-end developer.</p>
-                <span id="profile-picture"></span>
+                <span id="profile-picture" role="img" aria-label="Profile picture of Paulo Lopes."></span>
             </div>
         </div>
 
@@ -58,6 +65,7 @@
     <footer>
         <p>&copy; 2022 Paulo Lopes</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
