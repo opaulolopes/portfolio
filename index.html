@@ -12,69 +12,72 @@
 </head>
 
 <body>
-    <!-- menu section -->
-    <header>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <nav class="top-nav">
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-            <ul class="menu">
-                <li><a id="selected" href="index.html">home</a>
-                <li><a href="portfolio.html">portfolio</a>
-                <li><a href="blog.html">blog</a>
-                <li><a href="contact.html">contact</a>
-            </ul>
-        </nav>
-        <section class="social-media">
-            <a href="https://github.com/opaulolopes" target="_blank"><img src="images/octocat.png" alt="GitHub"></a><br>
-            <a href="https://www.linkedin.com/in/pauloalvesf/" target="_blank"><img src="images/linkedin.png"
-                    alt="LinkedIn"></a>
-        </section>
-    </header>
+    <div id="body-container">
+        <header>
+            <!-- linkedin and github -->
+            <section class="social-media">
+                <a href="https://github.com/opaulolopes" target="_blank"><img src="images/octocat.png"
+                        alt="GitHub"></a><br>
+                <a href="https://www.linkedin.com/in/pauloalvesf/" target="_blank"><img src="images/linkedin.png"
+                        alt="LinkedIn"></a>
+            </section>
+            <!-- logo image -->
+            <img id="logo" src="images/logo.png" alt="Logo">
+            <nav class="top-nav">
+                <!-- mobile menu -->
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <!-- tablet/desktop menu -->
+                <ul class="menu">
+                    <li><a id="selected" href="index.html">home</a>
+                    <li><a href="portfolio.html">portfolio</a>
+                    <li><a href="blog.html">blog</a>
+                    <li><a href="contact.html">contact</a>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <!-- intro section -->
-        <div class="header">
+        <main>
+            <!-- home-container -->
+            <span role="img" id="profile-picture" aria-label="Profile picture of Paulo Lopes."></span>
             <div id="intro-container">
-                <p>hi!<br>i'm paulo lopes,<br>front-end developer.</p>
-                <span role="img" id="profile-picture" aria-label="Profile picture of Paulo Lopes."></span>
+                <h1>hi!<br>i'm paulo lopes,<br>front-end developer.</h1>
+                <h2>let me automate that task your team work on so repetitively (and probably tediously)!</h2>
+                <h3 id="about-me">WHO ART THOU, PAULO?</h3>
             </div>
-        </div>
-
-        <!-- content section -->
-        <div id="intro-content">
-            <hr>
-            <h1>let me automate that task your team work on so repetitively (and probably tediously)!</h1>
-            <h2 id="about-me">WHO ART THOU, PAULO?</h3>
-        </div>
-
             <div id="modal-aboutme" class="modal-container show">
                 <div class="modal-content">
                     <button id="close">&times;</button>
-                    <p>I'm an ex-Environmental and Sanitary Engineer who's been entwined with programming ever since I can
-                        remember. I did tried to escape it, only to end up returning back to it. It's like Shakespeare said:
+                    <p>I'm an ex-Environmental and Sanitary Engineer who's been entwined with programming ever since I
+                        can
+                        remember. I did tried to escape it, only to end up returning back to it. It's like Shakespeare
+                        said:
                     <blockquote>"Journeys end at lovers' meeting"</blockquote>
                     <p>Well, at least now I'm a lover with an undergraduate degree. In Engineering, I'd constantly find
                         myself
                         automating stuff that other people seemed to spend hours or days doing manually.</p>
-                    <p>After graduation and a hell of an identity crisis that lasted for almost a year (my Not-So-Great Gap
-                        Year), I finally gave in and started self-teaching, and finally understood programming was what I
+                    <p>After graduation and a hell of an identity crisis that lasted for almost a year (my Not-So-Great
+                        Gap
+                        Year), I finally gave in and started self-teaching, and finally understood programming was what
+                        I
                         was
                         meant to study and work on
                         during my ride on Earth. I've been pulling out all the stops even since. I try to code almost
                         everyday
                         and I'm definitely a better developer today than I was yesterday. That's a daily fact!</p>
-                    <p>I'm currently looking for a role where I can feel challenged and improve my soft and hard skills, as
+                    <p>I'm currently looking for a role where I can feel challenged and improve my soft and hard skills,
+                        as
                         well
                         as being part of a team that inspires me.</p>
                 </div>
             </div>
-    </main>
+        </main>
+    </div>
 
     <footer>
-        <p>&copy; 2022 Paulo Lopes</p>
+        <p>Paulo Lopes &copy; 2022</p>
     </footer>
     <script src="script.js"></script>
 </body>
