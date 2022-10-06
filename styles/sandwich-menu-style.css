@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.top-nav {
-  height: 110px;
-}
-
 .menu {
   padding: 0;
 }
@@ -16,8 +12,7 @@
   display: none;
   float: right;
   padding: 15px;
-  margin-top: 75px;
-  margin-right: 10px;
+  margin: 20px 20px;
   cursor: pointer;
   justify-content: center;
 }
@@ -62,15 +57,33 @@
   transform: rotate(-405deg);
 }
 
+/* RESPONSIVE DESIGN
+For Mobile phones: */
+.menu-button-container {
+  margin: 10px 10px;
+}
+
+.menu {
+  position: absolute;
+  /* MUDAR A ALTURA DO MENU AQUI EMBAIXO!!! */
+  top: 40px;
+  width: 100%;
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  .menu-button-container {
+    margin: 20px 20px;
+  }
+}
+
 @media (max-width: 1400px) {
   .menu-button-container {
     display: flex;
   }
 
   .menu {
-    position: absolute;
-    top: 110px;
-    width: 100%;
+    top: 60px;
   }
 
   #menu-toggle~.menu li {
@@ -107,7 +120,7 @@
     text-decoration: none;
     padding: 15px 50% !important;
   }
-  
+
   .menu a:hover {
     background-color: #E3A185;
     font-weight: bold;

@@ -45,31 +45,28 @@
 }
 
 .top-nav {
-    justify-content: space-around;
     background-color: var(--header);
     box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.6);
-    font-size: 12pt;
     text-align: right;
-    border-radius: 2em 2em 0 0;
 }
 
 /* linkedin and github */
-section.social-media {
+.social-media {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50;
 }
 
-section.social-media img {
+.social-media img {
     filter: brightness(0%) invert(87%);
     width: 40px;
-    margin: 10px 20px 0px;
+    margin: 10px 0 0 20px;
     border-radius: 50%;
     box-sizing: border-box;
     transition-duration: 0.5s;
 }
 
-section.social-media img:hover {
+.social-media img:hover {
     background: rgba(255, 255, 255, 0.87);
     filter: brightness(100%);
     border: 2px solid rgba(255, 255, 255, 0.87);
@@ -84,17 +81,14 @@ section.social-media img:hover {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 40px;
     left: 50%;
     transform: translate(-50%);
 }
 
 /* home */
 h1 {
-    font-weight: bold;
-    padding: 5vh 0 0 20px;
+    font-weight: normal;
     position: absolute;
-    bottom: 20%
 }
 
 #profile-picture {
@@ -102,7 +96,6 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 0;
     left: 50%;
     transform: translate(-50%);
 }
@@ -174,10 +167,8 @@ blockquote {
 }
 
 h2 {
-    font-size: 16pt;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 1.5pt;
     margin: auto;
     max-width: 530px;
 }
@@ -198,13 +189,12 @@ h3:hover {
     box-shadow: 0 5px 7px black;
 }
 
-footer {
+footer p {
     background-color: var(--header);
-    text-align: center;
     padding: 5px;
-    border-radius: 15px 15px 0 0;
+    text-align: center;
+    border-radius: 2em 2em 0 0;
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
 }
@@ -327,20 +317,46 @@ html {
     height: 100vh;
 }
 
+.top-nav {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
 #logo {
     width: 150px;
     height: 26px;
+    bottom: 10px;
+    z-index: 2;
 }
 
 h1 {
-    font-size: 16pt;
-    letter-spacing: 2pt;
+    background: var(--button);
+    width: 90vw;
+    font-size: 14pt;
+    letter-spacing: 1.5pt;
     line-height: 1.3em;
+    padding: 10px;
+    bottom: 13%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h2 {
+    font-size: 12pt;
+    letter-spacing: 1.5pt;
 }
 
 #profile-picture {
-    width: 100vw;
+    width: 90vw;
     aspect-ratio: 1 / 1;
+    bottom: 20%;
+}
+
+#intro-container {
+    padding: 60px 15px 0;
 }
 
 .modal-content {
@@ -361,6 +377,10 @@ p.title {
     top: 30%;
 }*/
 
+footer p {
+    bottom: 50px;
+}
+
 /* For tablets: */
 @media only screen and (min-width: 600px) {
     #body-container {
@@ -371,21 +391,36 @@ p.title {
         border-radius: 2em;
     }
 
+    .top-nav {
+        position: static;
+        height: 60px;
+        border-radius: 2em 2em 0 0;
+    }
+
     #logo {
         width: 250px;
         height: 43px;
+        top: 10px;
+    }
+
+    #intro-container {
+        padding: 15px;
     }
 
     h1 {
+        background: transparent;
         font-size: 18pt;
         letter-spacing: 3pt;
         line-height: 1.5em;
+        padding: 5vh 0 0 20px;
+        bottom: 20%;
     }
 
     #profile-picture {
         width: 70vw;
         aspect-ratio: 1 / 1;
         border-radius: 5%;
+        bottom: 0;
     }
 
     /*.blog {
@@ -397,6 +432,10 @@ p.title {
     p.title {
         top: 50%;
     }*/
+
+    footer p {
+        bottom: 0;
+    }
 }
 
 /* For desktops:  */
@@ -430,17 +469,20 @@ p.title {
 @media only screen and (min-width: 1400px) {
 
     /* menu */
+    ul {
+        margin-right: 20px
+    }
+
     li {
         display: inline-block;
-        margin-top: 40px;
-        padding: 25px 0;
+        padding: 20px 0;
     }
 
     nav a {
         color: white;
         font-weight: bold;
         text-decoration: none;
-        padding: 25px 35px;
+        padding: 20px 35px;
         transition-duration: .5s;
     }
 
@@ -453,7 +495,7 @@ p.title {
 
     a#selected {
         background-color: var(--button);
-        padding: 25px 35px;
+        padding: 20px 35px;
         border-radius: 10px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, .7);
     }
