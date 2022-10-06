@@ -11,28 +11,32 @@
 </head>
 
 <body>
-    <!-- menu section -->
-    <header>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <nav class="top-nav">
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-            <ul class="menu">
-                <li><a href="index.html">home</a>
-                <li><a href="portfolio.html">portfolio</a>
-                <li><a href="blog.html">blog</a>
-                <li><a id="selected" href="contact.html">contact</a>
-            </ul>
-        </nav>
+    <div id="body-container">
+        <header>
+            <!-- linkedin and github -->
             <section class="social-media">
                 <a href="https://github.com/opaulolopes" target="_blank"><img src="images/octocat.png"
-                        alt="GitHub"></a><br>
+                        alt="GitHub"></a>
                 <a href="https://www.linkedin.com/in/pauloalvesf/" target="_blank"><img src="images/linkedin.png"
                         alt="LinkedIn"></a>
             </section>
-    </header>
+            <!-- logo image -->
+            <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo"></a>
+            <nav class="top-nav">
+                <!-- mobile menu -->
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <!-- tablet/desktop menu -->
+                <ul class="menu">
+                    <li><a href="index.html">home</a>
+                    <li><a href="portfolio.html">portfolio</a>
+                    <li><a href="blog.html">blog</a>
+                    <li><a id="selected" href="contact.html">contact</a>
+                </ul>
+            </nav>
+        </header>
 
     <main>
         <div class="header">
@@ -51,6 +55,7 @@
             </form>
         </div>
     </main>
+    </div>
 
     <footer>
         <p>&copy; 2022 Paulo Lopes</p>

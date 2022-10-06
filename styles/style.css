@@ -53,8 +53,6 @@
 /* linkedin and github */
 .social-media {
     position: absolute;
-    top: 0;
-    left: 50;
 }
 
 .social-media img {
@@ -101,8 +99,7 @@ h1 {
 }
 
 p {
-    padding-top: 8pt;
-    padding-bottom: 8pt;
+    padding: 0 30px;
     text-align: justify;
 }
 
@@ -134,7 +131,6 @@ blockquote {
     background: var(--body);
     min-width: 300px;
     padding: 40px;
-    border: 10px solid black;
     box-shadow: 0 0 0 10px rgb(114, 51, 0);
 }
 
@@ -193,29 +189,28 @@ footer p {
     background-color: var(--header);
     padding: 5px;
     text-align: center;
-    border-radius: 2em 2em 0 0;
+    border-radius: 15px 15px 0 0;
     position: absolute;
     left: 0;
     right: 0;
 }
 
-/*OTHER PAGES 
+/* OTHER PAGES */
 #portfolio-container,
 #blog-container,
 #contact-container {
-    padding: 1em;
+    padding: 1.5em;
 }
 
-p.title {
+.title {
     font-size: 30pt;
     font-weight: bold;
-    position: relative;
     text-align: center;
+    margin: 1em;
+    position: relative;
 }
 
- PORTFOLIO PAGE 
-
- BLOG PAGE 
+/* BLOG PAGE */
 #blog-container {
     display: flex;
     justify-content: space-around;
@@ -246,7 +241,7 @@ p.title {
     font-size: 20pt;
     border-radius: 15px;
     text-align: center;
-    padding-top: 110px;
+    padding-top: 90px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -265,7 +260,7 @@ p.title {
     background-image: url('../images/pic-paulo.png');
 }
 
- CONTACT PAGE 
+/* CONTACT PAGE */
 form {
     margin: auto;
     margin-bottom: 1em;
@@ -304,7 +299,7 @@ button {
 
 button:hover {
     background-color: var(--menu);
-}*/
+}
 
 /* RESPONSIVE DESIGN 
  For mobile phones:  */
@@ -322,7 +317,7 @@ html {
     height: 50px;
     position: absolute;
     bottom: 0;
-    z-index: 1;
+    z-index: ;
 }
 
 #logo {
@@ -339,7 +334,7 @@ h1 {
     letter-spacing: 1.5pt;
     line-height: 1.3em;
     padding: 10px;
-    bottom: 13%;
+    bottom: 90px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -352,7 +347,7 @@ h2 {
 #profile-picture {
     width: 90vw;
     aspect-ratio: 1 / 1;
-    bottom: 20%;
+    bottom: 120px;
 }
 
 #intro-container {
@@ -363,7 +358,7 @@ h2 {
     width: 85%;
 }
 
-/*#blog-container {
+#blog-container {
     flex-direction: column;
 }
 
@@ -373,9 +368,9 @@ h2 {
     margin: 1em auto;
 }
 
-p.title {
-    top: 30%;
-}*/
+.title {
+    top: 40px;
+}
 
 footer p {
     bottom: 50px;
@@ -393,7 +388,7 @@ footer p {
 
     .top-nav {
         position: static;
-        height: 60px;
+        height: 55px;
         border-radius: 2em 2em 0 0;
     }
 
@@ -403,35 +398,35 @@ footer p {
         top: 10px;
     }
 
-    #intro-container {
-        padding: 15px;
-    }
-
     h1 {
-        background: transparent;
+        width: 80vw;
         font-size: 18pt;
         letter-spacing: 3pt;
         line-height: 1.5em;
-        padding: 5vh 0 0 20px;
-        bottom: 20%;
+        padding: 10px;
+        bottom: 20px;
     }
 
     #profile-picture {
         width: 70vw;
         aspect-ratio: 1 / 1;
         border-radius: 5%;
-        bottom: 0;
+        bottom: 70px;
     }
 
-    /*.blog {
+    #intro-container {
+        padding: 15px;
+    }
+
+    .blog {
         width: 210px;
         height: 210px;
         margin: 1em auto;
     }
 
-    p.title {
+    .title {
         top: 50%;
-    }*/
+    }
 
     footer p {
         bottom: 0;
@@ -450,11 +445,7 @@ footer p {
         width: 70%;
     }
 
-    h1 {
-        width: 100%;
-    }
-
-    /*#blog-container {
+    #blog-container {
         flex-direction: row;
         max-width: 900px;
         margin: auto;
@@ -463,19 +454,32 @@ footer p {
     .blog {
         width: 210px;
         height: 210px;
-    }*/
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    h1 {
+        background: transparent;
+        width: 100%;
+        padding: 5vh 0 0 20px;
+        bottom: 26%;
+    }
+
+    #profile-picture {
+        bottom: 0;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
 
     /* menu */
     ul {
-        margin-right: 20px
+        margin-right: 20px;
+        margin: -40px;
     }
 
     li {
         display: inline-block;
-        padding: 20px 0;
     }
 
     nav a {

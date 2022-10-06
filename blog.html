@@ -11,49 +11,51 @@
 </head>
 
 <body>
-    <!-- menu section -->
-    <header>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <nav class="top-nav">
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-            <ul class="menu">
-                <li><a href="index.html">home</a>
-                <li><a href="portfolio.html">portfolio</a>
-                <li><a id="selected" href="blog.html">blog</a>
-                <li><a href="contact.html">contact</a>
-            </ul>
-        </nav>
+    <div id="body-container">
+        <header>
+            <!-- linkedin and github -->
             <section class="social-media">
-                <a href="https://github.com/opaulolopes" target="_blank"><img src="images/octocat.png"
-                        alt="GitHub"></a><br>
+                <a href="https://github.com/opaulolopes" target="_blank"><img src="images/octocat.png" alt="GitHub"></a>
                 <a href="https://www.linkedin.com/in/pauloalvesf/" target="_blank"><img src="images/linkedin.png"
                         alt="LinkedIn"></a>
             </section>
-    </header>
+            <!-- logo image -->
+            <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo"></a>
+            <nav class="top-nav">
+                <!-- mobile menu -->
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <!-- tablet/desktop menu -->
+                <ul class="menu">
+                    <li><a href="index.html">home</a>
+                    <li><a href="portfolio.html">portfolio</a>
+                    <li><a id="selected" href="blog.html">blog</a>
+                    <li><a href="contact.html">contact</a>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <!-- blog posts section -->
-        <div class="header">
+        <main>
+            <!-- blog posts section -->
             <p class="title">blog</p>
-        </div>
-        <div id="blog-container">
-            <div class="blog post-one">
-                <span role="img" aria-label="Blog post (1 of 3)"></span>
-                <a href="#">First post</a>
+            <div id="blog-container">
+                <div class="blog post-one">
+                    <span role="img" aria-label="Blog post (1 of 3)"></span>
+                    <a href="#">First post</a>
+                </div>
+                <div class="blog post-two">
+                    <span role="img" aria-label="Blog post (2 of 3)"></span>
+                    <a href="##">Second post</a>
+                </div>
+                <div class="blog post-three">
+                    <span role="img" aria-label="Blog post (3 of 3)"></span>
+                    <a href="###">Third post</a>
+                </div>
             </div>
-            <div class="blog post-two">
-                <span role="img" aria-label="Blog post (2 of 3)"></span>
-                <a href="##">Second post</a>
-            </div>
-            <div class="blog post-three">
-                <span role="img" aria-label="Blog post (3 of 3)"></span>
-                <a href="###">Third post</a>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2022 Paulo Lopes</p>
