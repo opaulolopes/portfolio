@@ -1,135 +1,102 @@
 @charset "UTF-8";
 
 :root {
-    --header-height: 50px;
-    --menu-padding-1: 18px 10px 15px;
-    --menu-padding-2: 18px 40px 15px;
-    --menu-radius: 10px;
+    --header-height: 60px;
 }
 
-/* FOR MOBILE PHONES:   */
+/* MOBILE PHONE */
 @media only screen and (max-width: 600px) {
-    #body-container {
+    .body-container {
         width: 100vw;
         height: 100vh;
     }
 
     /* header */
     header {
-        width: 100%;
-        height: var(--header-height);
         position: absolute;
+        bottom: 0;
+        box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.9);
+    }
+
+    /* header > menu */
+    .menu-item>a {
+        letter-spacing: 3px;
+    }
+
+    /* logo */
+    .logo {
+        display: none;
+    }
+
+    /* sandwich menu */
+    .menu-button-container {
+        margin: 18px;
         bottom: 0;
     }
 
-    /* header > menu  */
-    #logo {
-        width: 150px;
-        height: 26px;
-    }
-
-    /* footer */
-    footer>p {
+    ul {
         bottom: var(--header-height);
     }
 }
 
-/* FOR TABLETS: */
+/* TABLET */
 @media only screen and (min-width: 600px) {
-    #body-container {
+    .body-container {
         width: 90vw;
         height: 90vh;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+        margin: auto;
         transform: translateY(5%);
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     }
 
     /* header */
     header {
-        height: var(--header-height);
         border-radius: 2em 2em 0 0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
     }
 
-    /* footer */
-    footer p {
-        bottom: 0;
-    }
-}
+    /* sandwich menu */
+    @media (min-width: 660px) {
+        .menu-button-container {
+            margin: 18px 30px;
+            top: 0;
+        }
 
-/* FOR DESKTOPS: */
-@media only screen and (min-width: 768px) {
-    @media only screen and (min-width: 860px) {
-
-        /* header > menu  */
         ul {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 5px;
+            top: var(--header-height);
+            list-style-type: none;
         }
+    }
 
-        li {
-            display: inline-block;
-        }
+    @media only screen and (max-width: 870px) {
 
-        a {
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        a.menu {
-            padding: var(--menu-padding-1);
-            transition-duration: .5s;
-        }
-
-        a.menu:hover,
-        a#selected:hover {
-            background-color: var(--selection);
-            border-radius: var(--menu-radius);
-            box-shadow: 2px x 5px rgba(0, 0, 0, .7);
-            transition-duration: .5s;
-        }
-
-        a#selected {
-            background-color: var(--button);
-            padding: var(--menu-padding-1);
-            border-radius: var(--menu-radius);
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, .7);
-            transition-duration: .5s;
-        }
-
-        #logo {
-            padding: 0 15px;
-        }
-
-        @media only screen and (min-width: 1110px) {
-            a.menu {
-
-                padding: var(--menu-padding-2);
-            }
-
-            a#selected {
-                background-color: var(--button);
-                padding: var(--menu-padding-2);
-            }
+        .logo {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            translate: -50%;
         }
     }
 }
 
-.menu {
-    position: static;
-    height: 55px;
-    border-radius: 2em 2em 0 0;
-}menu a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 20px 35px;
-    transition-duration: .5s;
-}
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
 
-menu a:hover {
-    background-color: var(--selection);
-    border-radius: 10px;
-    transition-duration: .5s;
-    box-shadow: 2px x 5px rgba(0, 0, 0, .7);
+    @media only screen and (min-width: 870px) {
+
+        /* header > menu */
+        .menu a {
+            letter-spacing: 1px;
+            padding: 22px 10px 17px;
+        }
+
+        @media only screen and (min-width: 1150px) {
+
+            /* header > menu */
+            .menu a {
+                letter-spacing: 3px;
+                padding: 22px 35px 17px;
+            }
+        }
+    }
 }
