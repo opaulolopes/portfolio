@@ -93,11 +93,6 @@
             grid-template-columns: repeat(2, 200px);
         }
     }
-
-    /* footer */
-    footer p {
-        bottom: 0;
-    }
 }
 
 /* DESKTOP */

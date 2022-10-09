@@ -16,6 +16,8 @@ body {
     background: #325946;
     font-family: 'Raleway', Arial, sans-serif;
     cursor: default;
+    display: flex;
+    flex-direction: column;
 }
 
 .body-container {
@@ -179,8 +181,5 @@ footer p {
     background-color: #382f27;
     text-align: center;
     padding: 5px;
-    position: absolute;
-    left: 0;
-    right: 0;
     border-radius: 15px 15px 0 0;
 }
