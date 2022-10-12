@@ -64,12 +64,10 @@ header {
 
 /* main */
 main {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin: 1.5em;
 }
 
 .title {
-    padding: 1.5em;
     padding-bottom: 8pt;
     border-bottom: 1px solid;
     border-bottom-left-radius: 5px;
