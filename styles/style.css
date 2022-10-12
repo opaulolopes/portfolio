@@ -22,6 +22,7 @@ body {
 
 .body-container {
     background: #251C19;
+    overflow-y: scroll;
 }
 
 /* header */
@@ -178,6 +179,7 @@ button:hover {
 
 /* footer */
 footer p {
+    position: sticky;
     background-color: #382f27;
     text-align: center;
     padding: 5px;
