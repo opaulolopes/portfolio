@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* GENERAL STYLESHEETS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #251C19;
+    color: rgba(255, 255, 255, .87);
+    font-family: 'Raleway', Arial, sans-serif;
+    cursor: default;
+}
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #382f27;
+    box-shadow: 1px 5px 9px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+/* header > GitHub / LinkedIn */
+.social-media {
+    flex: 0 0 130px;
+}
+
+.social-media img {
+    width: 40px;
+    margin-left: 20px;
+    filter: brightness(0) invert(87%);
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.social-media img:hover {
+    filter: brightness(100%) invert(0);
+    background-color: rgba(255, 255, 255, .87);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+    transform: translate(.5em, .5em);
+}
+
+/* header > expanded menu bar */
+.menu-bar {
+    width: calc(100% - 2*130px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    padding: 0 15px;
+}
+
+.menu-item {
+    color: rgba(255, 255, 255, .87);
+    font-size: 14pt;
+    text-decoration: none;
+    letter-spacing: 2pt;
+    font-weight: bold;
+    padding: 19px 45px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.menu-item:hover {
+    background-color: rgb(62, 53, 44);
+    color: #E3A185;
+}
+
+/* main */
+main {
+    /* HEIGHT APENAS PARA DISPLAY TEMPORÁRIO */
+    min-height: 75vh;
+}
+
+/* HOME PAGE */
+/* main > introduction */
+.home-container {
+    background-color: #382f27;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.home-container>h1 {
+    font-size: 20pt;
+    font-weight: normal;
+    letter-spacing: 3pt;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: end;
+}
+
+strong {
+    color: #E3A185;
+}
+
+.home-container>h2 {
+    background-color: rgba(255, 255, 255, .87);
+    color: #251C19;
+    font-size: 22pt;
+    font-weight: normal;
+    letter-spacing: 3pt;
+    line-height: 1.5em;
+    width: 400px;
+    height: 100px;
+    padding: 5pt 15pt;
+    margin-bottom: 150px;
+    align-self: end;
+}
+
+.home-container>h2:after {
+    content: "";
+    border-right: 4px solid #E3A185;
+    animation: typing .75s step-end infinite;
+}
+
+@keyframes typing {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #E3A185;
+    }
+}
+
+.home-picture {
+    background-image: url(../images/pic-paulo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    border-radius: 2em;
+    align-self: end;
+}
+
+/* main > about me */
+.about-container {
+    width: 800px;
+    margin: 3em auto;
+}
+
+.title {
+    border-bottom: 1px solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    padding-bottom: 8pt;
+    margin-bottom: 1em;
+}
+
+.about-container>p, blockquote {
+    letter-spacing: .5pt;
+    line-height: 2em;
+    text-align: justify;
+    padding-bottom: 1.5em;
+    margin: auto;
+}
+
+blockquote {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* footer */
+footer>p {
+    background-color: #382f27;
+    text-align: center;
+    padding: 5px;
+}
