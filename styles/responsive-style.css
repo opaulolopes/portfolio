@@ -4,22 +4,17 @@
     --header-height: 60px;
 }
 
-/* MOBILE PHONE */
+/* MOBILES */
 @media only screen and (max-width: 600px) {
-    .body-container {
-        width: 100vw;
-        height: 100vh;
-    }
 
     /* header */
     header {
         position: fixed;
         bottom: 0;
-        box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
         background-image: url(../images/logo.png);
         background-size: 150px;
         background-repeat: no-repeat;
-        background-position: 50%;
+        background-position: center;
     }
 
     /* header > menu */
@@ -42,28 +37,40 @@
         bottom: var(--header-height);
     }
 
+    /* HOME PAGE */
+    .intro {
+        letter-spacing: 3pt;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    #profile-picture {
+        bottom: 35px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /* FORM PAGE */
+    form {
+        width: 80vw;
+    }
+
     footer {
         padding-bottom: var(--header-height);
     }
 }
 
-/* TABLET */
+/* LARGE MOBILES / PORTRAIT TABLETS */
 @media only screen and (min-width: 600px) {
-    .body-container {
-        width: 95vw;
-        height: 95vh;
-        border-radius: 2em;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-        margin: auto;
-        transform: translateY(2.5%);
-    }
 
     /* header */
     header {
-        border-radius: 2em 2em 0 0;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-        top: 0;
-        box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+        background-image: url(../images/logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     /* sandwich menu */
@@ -77,46 +84,93 @@
         list-style-type: none;
     }
 
-    @media only screen and (max-width: 870px) {
+    /* HOME PAGE */
+    .intro {
+        letter-spacing: 3pt;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
 
-    /* header */
-        header {
-            background-image: url(../images/logo.png);
-            background-size: 232px;
-            background-repeat: no-repeat;
-            background-position: 50%;
-        }
+    #profile-picture {
+        bottom: 35px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 
-        /* BLOG PAGE */
-        .blog-container {
-            grid-template-columns: repeat(2, 200px);
-        }
+    /* BLOG PAGE */
+    .blog-container {
+        grid-template-columns: repeat(2, 210px);
+        gap: 3em;
+    }
+
+    /* FORM PAGE */
+    form {
+        width: 60vw;
+        transition: all .4s;
     }
 }
 
-/* DESKTOP */
+/* LANDSCAPE TABLETS */
 @media only screen and (min-width: 768px) {
 
-    @media only screen and (min-width: 870px) {
+    /* header */
+    header {
+        background-image: none;
+    }
 
-        /* header > menu */
-        .menu a {
-            letter-spacing: 1px;
-            padding: 22px 10px 17px;
-        }
+    /* header > menu */
+    .menu a {
+        letter-spacing: 1px;
+        padding: 22px 10px 17px;
+        transition: all .4s;
+    }
 
-        /* BLOG PAGE */
-        .blog-container {
-            grid-template-columns: repeat(3, 210px);
-        }
+    /* HOME PAGE */
+    .intro {
+        bottom: 120px;
+        left: 0;
+        right: auto;
+        margin: 0 auto;
+    }
 
-        @media only screen and (min-width: 1150px) {
+    #profile-picture {
+        bottom: 0;
+        left: auto;
+        right: 0;
+        margin: auto;
+        z-index: -1 !important;
+    }
 
-            /* header > menu */
-            .menu a {
-                letter-spacing: 3px;
-                padding: 22px 35px 17px;
-            }
-        }
+    /* BLOG PAGE */
+    .blog-container {
+        grid-template-columns: repeat(3, 210px);
+    }
+}
+
+/* LAPTOPS / DESKTOP */
+@media only screen and (min-width: 992px) {
+
+    /* header > menu */
+    .menu a {
+        letter-spacing: 3px;
+        padding: 17px 40px 17px;
+    }
+
+    /* BLOG PAGE */
+    .blog-container {
+        gap: 10em;
+    }
+}
+
+/* LARGE LAPTOPS / DESKTOPS AND UP */
+@media only screen and (min-width: 1200px) {
+
+    /* FORM PAGE */
+    form {
+        width: 30vw;
+        min-width: 30vw;
     }
 }
