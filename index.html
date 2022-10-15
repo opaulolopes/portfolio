@@ -19,19 +19,21 @@
                 <a href="https://www.linkedin.com/in/pauloalvesf/" target="_blank"><img src="images/linkedin.png"
                         alt="LinkedIn"></a>
             </div>
-            <!-- mobile / tablet menu -->
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-            <!-- menu bar -->
-            <div class="menu-bar">
-                <a class="menu-item" href="index.html">home</a>
-                <a class="menu-item" href="#projects">projects</a>
-                <img class="logo" src="images/logo.png" alt="Paulo Lopes logo.">
-                <a class="menu-item" href="#blog">blog</a>
-                <a class="menu-item" href="#contact">contact</a>
-            </div>
+            <nav>
+                <!-- mobile / tablet menu -->
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <!-- menu bar -->
+                <div class="menu-bar">
+                    <a class="menu-item" href="index.html" aria-label="home section">home</a>
+                    <a class="menu-item" href="#projects" aria-label="projects section">projects</a>
+                    <img class="logo" src="images/logo.png" alt="Paulo Lopes logo.">
+                    <a class="menu-item" href="#blog" aria-label="blog section">blog</a>
+                    <a class="menu-item" href="#contact" aria-label="contact me section">contact</a>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -90,7 +92,7 @@
                     </figure>
                     <figure class="post">
                         <a href="##">
-                            <img src="images/pic-paulo.png" alt="Blog post (2 of 3)" aria-label="Aoba">
+                            <img src="images/pic-paulo.png" alt="Blog post (2 of 3)" aria-label="Blog post (2 of 3)">
                             <figcaption>Second post</figcaption>
                         </a>
                     </figure>
@@ -105,20 +107,24 @@
             <div id="contact">
                 <form action="action_page.php">
                     <h1 class="title">contact me</h1>
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your e-mail address">
-                    <textarea id="message" placeholder="Spill it out! You'll be impressed by how fast I respond."
+                    <label for="fname">Name:</label><br>
+                    <input type="text" name="fname" id="fname" placeholder="Your name" aria-label="Your name">
+                    <label for="femail">E-mail:</label><br>
+                    <input type="email" name="femail" id="femail" placeholder="Your e-mail address"
+                        aria-label="Your e-mail address">
+                    <label for="fmessage">Message:</label><br>
+                    <textarea name="fmessage" id="fmessage"
+                        placeholder="Spill it out! You'll be impressed by how fast I respond."
+                        aria-label="Youre message! You'll be impressed by how fast I respond."
                         style="height: 150px;"></textarea>
                     <button>SUBMIT</button>
                 </form>
             </div>
         </div>
+        <footer>
+            <p>Paulo Lopes &copy; 2022</p>
+        </footer>
     </main>
-
-    <footer>
-        <p>Paulo Lopes &copy; 2022</p>
-    </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>
