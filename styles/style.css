@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 @import url(responsive-style.css);
-@import url(menu-style.css);
+@import url(dropdown-style.css);
 
 * {
     box-sizing: border-box;
