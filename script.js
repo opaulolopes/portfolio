@@ -1,17 +1,7 @@
-const modal = document.getElementById('modal-aboutme')
-const btn = document.getElementById('about-me')
-const close = document.getElementById('close')
-
-btn.onclick = function() {
-    modal.style.display = 'block'
-}
-
-close.onclick = function() {
-    modal.style.display = 'none'
-}
+const toggle = document.getElementById('menu-toggle')
 
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = 'none'
+    if (event.target == toggle) {
+        toggle.display = 'none'
     }
 }
